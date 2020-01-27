@@ -26,10 +26,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        /* Write a program that prompts a user to enter a temperature in Fahrenheit, converts it to Celsius,
-        and displays the Celsius temperature. Separate the code that collects user input, the code that converts
-        temperatures, and the code that displays the output into different methods. The program should repeat until
-        the user enters a value less than -460 (approximately absolute zero).*/
         System.out.println("Enter a temperature in fahrenheit(Enter '-461' or lower to end the program): ");
         double fahrenheitInput = input.nextDouble();
 
