@@ -18,7 +18,7 @@ public class Main {
     }
 
     // Output to print out degrees celsius to the user.
-    // Importing DecimalFormat class to restrict the value of Variables.celsius to only two decimal places.
+    // Using DecimalFormat class to restrict the celsius value to only two decimal places.
     private static void output(double celsiusValue) {
         DecimalFormat celsiusFormat = new DecimalFormat("###.##");
         double celsiusCalculation = (celsiusCalculator(celsiusValue));
@@ -32,7 +32,6 @@ public class Main {
         // Using a while loop to determine if the userInput() value is greater than or equal to -460.
         // Will not execute if 'less than -460'.
         // Will execute if greater than or equal to -460.
-        // Calling celsiusCalculator() to calculate userInput() value into degrees celsius.
         // Calling output() to display the results from celsiusCalculator().
         // Calling upon userInput() again since the previous userInput value was true
         while (fahrenheitInput >= -460) {
