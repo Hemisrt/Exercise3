@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         double value = 0;
         value = output(value);
-        
+
         // Using a while loop to determine if the userInput() value is greater than or equal to -460.
         // Will not execute if 'less than -460'.
         // Will execute if greater than or equal to -460.
@@ -28,10 +28,8 @@ public class Main {
     public static double input(double fahrenheitInput) {
         System.out.println("Enter a temperature in fahrenheit(Enter '-461' or lower to end the program): ");
         fahrenheitInput = input.nextDouble();
-        if (fahrenheitInput >= -460) {
-            return fahrenheitInput;
-        } else {
-            System.out.println("Exiting Program");
+        while (fahrenheitInput < -460) {
+            System.out.println("Exiting Program...");
             System.exit(0);
         }
         return fahrenheitInput;
