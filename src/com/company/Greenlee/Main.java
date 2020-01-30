@@ -38,16 +38,14 @@ public class Main {
     // Methods.
     // Calculator to determine degrees fahrenheit into degrees celsius.
     public static double celsiusCalculator(double fahrenheit) {
-        double celsius = 0;
-        celsius = (fahrenheit - 32.0) * (5.0/9.0);
+        double celsius = (fahrenheit - 32.0) * (5.0/9.0);
         return celsius;
     }
 
     // Output to print out degrees celsius to the user.
     // Using DecimalFormat class to restrict the celsius value to only two decimal places.
     public static void output(double a) {
-        DecimalFormat celsiusFormat = new DecimalFormat("###.##");
-        double celsiusCalculation = (celsiusCalculator(a));
-        System.out.print("This temperature in Celsius is: " + celsiusFormat.format(celsiusCalculation) + " C°\n\n");
+        DecimalFormat celsiusFormat = new DecimalFormat("###.##");;
+        System.out.print("This temperature in Celsius is: " + celsiusFormat.format(a) + " C°\n\n");
     }
 }
