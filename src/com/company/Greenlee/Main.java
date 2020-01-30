@@ -12,6 +12,11 @@ public class Main {
     public static void main(String[] args) {
         double userInput = input();
 
+        // Using a while loop to determine if the userInput() value is greater than or equal to -460.
+        // Will not execute if 'less than -460'.
+        // Will execute if greater than or equal to -460.
+        // Calling output() to display the results from celsiusCalculator().
+        // Calling upon userInput() again since the previous userInput value was true
         while (userInput >= -460) {
             double cel = celsiusCalculator(userInput);
             output(cel);
@@ -19,13 +24,6 @@ public class Main {
         }
 
         System.out.println("Exiting...");
-
-        // Using a while loop to determine if the userInput() value is greater than or equal to -460.
-        // Will not execute if 'less than -460'.
-        // Will execute if greater than or equal to -460.
-        // Calling output() to display the results from celsiusCalculator().
-        // Calling upon userInput() again since the previous userInput value was true
-
     }
 
     // Input Method for user inputting a value for degrees fahrenheit.
