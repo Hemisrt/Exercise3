@@ -45,7 +45,7 @@ public class Main {
     // Output to print out degrees celsius to the user.
     // Using DecimalFormat class to restrict the celsius value to only two decimal places.
     public static void output(double a) {
-        DecimalFormat celsiusFormat = new DecimalFormat("###.##");;
+        DecimalFormat celsiusFormat = new DecimalFormat("###.##");
         System.out.print("This temperature in Celsius is: " + celsiusFormat.format(a) + " C°\n\n");
     }
 }
